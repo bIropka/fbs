@@ -1,0 +1,70 @@
+@font-face {font-family: "Geometria";src: url("../fonts/Geometria.otf");}
+@font-face {font-family: "Geometria Bold";src: url("../fonts/Geometria-Bold.otf");}
+@font-face {font-family: "Geometria Italic";src: url("../fonts/Geometria-Italic.otf");}
+@font-face {font-family: "Geometria Medium";src: url("../fonts/Geometria-Medium.otf");}
+@font-face {font-family: "Geometria Medium Italic";src: url("../fonts/Geometria-MediumItalic.otf");}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Geometria", sans-serif;
+}
+
+ul li {
+     display: inline-block;
+}
+.block-content {
+    width: 100%;
+    max-width: 1140px;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+}
+
+.block-wrap {
+    width: 100%;
+}
+
+.header {
+    background: rgba(255, 255, 255, 0.5);
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.logo {
+
+}
+nav {
+    float: right;
+}
+
+.block-top {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.banner-top {
+    width: 100%;
+    height: 100%;
+    background: url('../images/top-banner.jpg') no-repeat center;
+    background-size: cover;
+}
+.block-top .block-content {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
