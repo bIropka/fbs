@@ -12,14 +12,25 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: "Geometria", sans-serif;
+    color: #333333;
 }
 
+a, a:hover, a:active {
+    outline: none;
+    border: none;
+}
 ul li {
      display: inline-block;
 }
 .block-content {
     width: 100%;
     max-width: 1140px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 60px;
+    color: #29464a;
+    text-align: center;
 }
 html {
     width: 100%;
@@ -33,21 +44,48 @@ body {
 
 .block-wrap {
     width: 100%;
+    padding: 7.5% 0;
 }
 
 .header {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.9);
     height: 60px;
     position: fixed;
-    top: 0;
+    top: -60px;
     left: 0;
     z-index: 1;
+    -webkit-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
+    padding: 0;
 }
 .logo {
-
+    font-family: "Geometria Bold", sans-serif;
+    font-size: 48px;
+    color: #eab43e;
+    line-height: 60px;
+    text-decoration: none;
 }
 nav {
     float: right;
+}
+nav ul li {
+    margin-right: 15px;
+}
+nav ul li:last-child {
+    margin-right: 0;
+}
+nav ul li a {
+    font-family: "Geometria Medium", sans-serif;
+    font-size: 22px;
+    color: #333333;
+    line-height: 60px;
+}
+nav ul li .active {
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: none;
 }
 
 .block-top {
@@ -67,4 +105,178 @@ nav {
     left: 0;
     right: 0;
     margin: auto;
+}
+.block-top .title {
+    width: 50%;
+    font-family: "Geometria Medium", sans-serif;
+    font-size: 67px;
+    color: #eab43e;
+    line-height: 67px;
+    text-align: left;
+}
+.block-top .text {
+    font-family: "Geometria Medium", sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: right;
+    margin-top: 10%;
+}
+.marker-scroll {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 52px;
+    height: 26px;
+    background: url('../images/scroll.png') no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+.marker-scroll:hover {
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+    transform: translateY(10px);
+}
+
+.our-services {
+    padding: 7.5% 0 0;
+    -webkit-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
+    box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
+}
+.our-services .block-content {
+    position: relative;
+}
+.customers-needs {
+    text-align: center;
+    margin-bottom: 7.5%;
+}
+.customers-needs li {
+    width: 250px;
+    vertical-align: top;
+}
+.icon-needs {
+    width: 80%;
+    height: 190px;
+    margin: 0 auto 3%;
+}
+.customers-needs li:nth-child(1) .icon-needs {background: url('../images/sprite-color.png') no-repeat -0.25% center;background-size: cover;}
+.customers-needs li:nth-child(2) .icon-needs {background: url('../images/sprite-color.png') no-repeat 8.25% center;background-size: cover;}
+.customers-needs li:nth-child(3) .icon-needs {background: url('../images/sprite-color.png') no-repeat 17% center;background-size: cover;}
+.customers-needs li:nth-child(4) .icon-needs {background: url('../images/sprite-color.png') no-repeat 26% center;background-size: cover;}
+.customers-needs .text {
+    font-size: 24px;
+}
+.image-girl {
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('../images/girl.png') no-repeat;
+    background-size: cover;
+}
+.services-accordion {
+    margin-top: 5%;
+    text-align: right;
+    height: 600px;
+    z-index: 1;
+}
+.services-accordion li {
+    width: 75%;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.services-accordion li:nth-child(2) {width: 67.5%;}
+.services-accordion li:nth-child(3) {width: 60%;}
+.services-accordion .item-header .text {
+    display: inline-block;
+    font-size: 40px;
+    color: #eab43e;
+    line-height: 40px;
+    cursor: pointer;
+    width: 90%;
+    vertical-align: top;
+}
+.services-accordion .item-header .marker-accordion {
+    display: inline-block;
+    font-size: 40px;
+    color: #eab43e;
+    line-height: 40px;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 10px;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -ms-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+.active .marker-accordion {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.services-accordion .item-content {
+    display: none;
+    padding-left: 6%;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.for-whom ul {
+    text-align: center;
+    margin-top: 5%;
+}
+.for-whom ul li {
+    width: 45%;
+    margin: 5% 2% 0;
+    vertical-align: top;
+}
+.for-whom ul li:nth-child(1), .for-whom ul li:nth-child(2) {
+    margin-top: 0;
+}
+.icon-for-whom {
+    width: 60%;
+    height: 250px;
+    margin: 0 auto;
+}
+.for-whom ul li:nth-child(1) .icon-for-whom {background: url('../images/sprite-black&white.png') no-repeat -0.7% center;background-size: cover;}
+.for-whom ul li:nth-child(2) .icon-for-whom {background: url('../images/sprite-black&white.png') no-repeat 39.75% center;background-size: cover;}
+.for-whom ul li:nth-child(3) .icon-for-whom {background: url('../images/sprite-black&white.png') no-repeat 10.25% center;background-size: cover;}
+.for-whom ul li:nth-child(4) .icon-for-whom {background: url('../images/sprite-black&white.png') no-repeat 30.25% center;background-size: cover;}
+.for-whom .text {
+    width: 95%;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 2.5% auto 0;
+}
+.offer {
+    background: #06406e;
+}
+.offer .text {
+    color: #ffffff;
+    font-size: 44px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.selling-info .text, .selling-info .selected-text {
+    font-size: 24px;
+    width: 45%;
+}
+.selling-info .selected-text {
+    font-family: "Geometria Medium", sans-serif;
+    margin-top: 10px;
 }
