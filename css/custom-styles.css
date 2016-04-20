@@ -465,7 +465,6 @@ nav ul li a:hover {
     display: inline-block;
     vertical-align: middle;
     width: 25%;
-    border: 1px solid black;
 }
 .partners .logo-pr {
     padding-top: 7.125%;
@@ -473,6 +472,7 @@ nav ul li a:hover {
     background-size: cover;
 }
 .partners .logo-sa {
+    padding-top: 8.19%;
     background: url('../images/logo-sa.png') no-repeat right center;
     background-size: cover;
 }
