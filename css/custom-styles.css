@@ -415,6 +415,67 @@ nav ul li a:hover {
 .color-list li:nth-child(2) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 44.25% center;background-size: cover;}
 .color-list li:nth-child(3) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 17% center;background-size: cover;}
 .color-list li:nth-child(4) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 63.1% center;background-size: cover;}
+.crisis .title {
+    font-family: "Geometria Medium", sans-serif;
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+}
+.crisis ul {
+    margin-top: 5%;
+}
+.crisis .icon-ok {
+    background: url('../images/sprite-ok.png') no-repeat right center;
+    background-size: cover;
+    vertical-align: middle;
+    bottom: 0;
+}
+.crisis ul li {
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+.crisis ul li .text {
+    display: inline-block;
+    width: 95%;
+    font-size: 30px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+.crisis .block-content>.text {
+    font-family: "Geometria Medium Italic", sans-serif;
+    font-size: 44px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 2.5%;
+}
+.partners ul {
+    margin-top: 7.5%;
+    width: 100%;
+}
+.partners ul li {
+    width: 100%;
+    margin-bottom: 2.5%;
+}
+.partners .text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.partners .logo-partner {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    border: 1px solid black;
+}
+.partners .logo-pr {
+    padding-top: 7.125%;
+    background: url('../images/logo-pr.png') no-repeat right center;
+    background-size: cover;
+}
+.partners .logo-sa {
+    background: url('../images/logo-sa.png') no-repeat right center;
+    background-size: cover;
+}
 /*  the end of the about-fbs page   */
 
 /*    training page    */
@@ -470,7 +531,7 @@ nav ul li a:hover {
     width: 37px;
     padding-top: 30px;
     vertical-align: top;
-    background: url('../images/marker-ok.png') no-repeat center;
+    background: url('../images/sprite-ok.png') no-repeat left center;
     background-size: cover;
     bottom: -8px;
     margin-right: 1%;
