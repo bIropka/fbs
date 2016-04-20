@@ -57,7 +57,7 @@ body {
     position: fixed;
     top: -60px;
     left: 0;
-    z-index: 10;
+    z-index: 1;
     -webkit-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
     box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
@@ -116,7 +116,7 @@ nav ul li a:hover {
     font-family: "Geometria Medium", sans-serif;
     font-size: 76px;
     color: #eab43e;
-    line-height: 60px;
+    line-height: 46px;
     text-align: left;
     text-transform: none;
 }
@@ -162,24 +162,24 @@ nav ul li a:hover {
 .our-services .block-content {
     position: relative;
 }
-.if-you ul {
+.color-list {
     text-align: center;
     margin-top: 5%;
 }
-.if-you ul li {
+.color-list li {
     width: 250px;
     vertical-align: top;
 }
-.icon-needs {
+.icon {
     width: 80%;
     height: 190px;
     margin: 0 auto 3%;
 }
-.if-you ul li:nth-child(1) .icon-needs {background: url('../images/sprite-color.png') no-repeat -0.25% center;background-size: cover;}
-.if-you ul li:nth-child(2) .icon-needs {background: url('../images/sprite-color.png') no-repeat 8.25% center;background-size: cover;}
-.if-you ul li:nth-child(3) .icon-needs {background: url('../images/sprite-color.png') no-repeat 17% center;background-size: cover;}
-.if-you ul li:nth-child(4) .icon-needs {background: url('../images/sprite-color.png') no-repeat 26% center;background-size: cover;}
-.if-you ul li .text {
+.color-list li:nth-child(1) .icon-needs {background: url('../images/sprite-color.png') no-repeat -0.25% center;background-size: cover;}
+.color-list li:nth-child(2) .icon-needs {background: url('../images/sprite-color.png') no-repeat 8.25% center;background-size: cover;}
+.color-list li:nth-child(3) .icon-needs {background: url('../images/sprite-color.png') no-repeat 17% center;background-size: cover;}
+.color-list li:nth-child(4) .icon-needs {background: url('../images/sprite-color.png') no-repeat 26% center;background-size: cover;}
+.color-list li .text {
     font-size: 24px;
 }
 .image-girl {
@@ -411,35 +411,30 @@ nav ul li a:hover {
 /*  the end of the contacts page   */
 
 /*    about-fbs page    */
-
+.color-list li:nth-child(1) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 35.4% center;background-size: cover;}
+.color-list li:nth-child(2) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 44.25% center;background-size: cover;}
+.color-list li:nth-child(3) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 17% center;background-size: cover;}
+.color-list li:nth-child(4) .icon-fbs {background: url('../images/sprite-color.png') no-repeat 63.1% center;background-size: cover;}
 /*  the end of the about-fbs page   */
 
 /*    training page    */
-.about-training ul {
-    text-align: center;
-    margin-top: 5%;
-}
-.about-training ul li {
-    width: 250px;
-    vertical-align: top;
+.block-top-training .title {
+    width: 80%;
 }
 .icon-training {
     width: 80%;
     height: 190px;
     margin: 0 auto 3%;
 }
-.about-training ul li:nth-child(1) .icon-training {background: url('../images/sprite-color.png') no-repeat 73.25% center;background-size: cover;}
-.about-training ul li:nth-child(2) .icon-training {background: url('../images/sprite-color.png') no-repeat 82.5% center;background-size: cover;}
-.about-training ul li:nth-child(3) .icon-training {background: url('../images/sprite-color.png') no-repeat 53.15% center;background-size: cover;}
-.about-training ul li:nth-child(4) .icon-training {background: url('../images/sprite-color.png') no-repeat 99.55% center;background-size: cover;}
-.about-training ul li .text {
-    font-size: 24px;
-}
+.color-list li:nth-child(1) .icon-training {background: url('../images/sprite-color.png') no-repeat 73.25% center;background-size: cover;}
+.color-list li:nth-child(2) .icon-training {background: url('../images/sprite-color.png') no-repeat 82.5% center;background-size: cover;}
+.color-list li:nth-child(3) .icon-training {background: url('../images/sprite-color.png') no-repeat 53.15% center;background-size: cover;}
+.color-list li:nth-child(4) .icon-training {background: url('../images/sprite-color.png') no-repeat 99.55% center;background-size: cover;}
 .you-will-get {
     padding: 0;
-    -webkit-box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
-    box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
 }
 .you-will-get .block-content {
     position: relative;
@@ -469,11 +464,11 @@ nav ul li a:hover {
     display: block;
     margin-top: 1%;
 }
-.icon-you-get {
+.icon-ok {
     position: relative;
     display: inline-block;
-    width: 3.15%;
-    padding-top: 2.5%;
+    width: 37px;
+    padding-top: 30px;
     vertical-align: top;
     background: url('../images/marker-ok.png') no-repeat center;
     background-size: cover;

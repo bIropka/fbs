@@ -25,4 +25,8 @@ $(document).ready(function () {
         $('html, body').stop().animate({scrollTop: $('.for-scroll').offset().top}, 800);
     });
 
+    $(window).load(function(){
+        $(".block-wrap").mCustomScrollbar();
+    });
+
 });
