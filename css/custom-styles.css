@@ -57,7 +57,7 @@ body {
     position: fixed;
     top: -60px;
     left: 0;
-    z-index: 1;
+    z-index: 10;
     -webkit-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
     box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
@@ -113,11 +113,10 @@ nav ul li a:hover {
     margin: auto;
 }
 .block-top .title {
-    width: 50%;
     font-family: "Geometria Medium", sans-serif;
     font-size: 76px;
     color: #eab43e;
-    line-height: 76px;
+    line-height: 60px;
     text-align: left;
     text-transform: none;
 }
@@ -416,9 +415,6 @@ nav ul li a:hover {
 /*  the end of the about-fbs page   */
 
 /*    training page    */
-.block-top-training .title {
-    width: 80%;
-}
 .about-training ul {
     text-align: center;
     margin-top: 5%;
@@ -439,15 +435,11 @@ nav ul li a:hover {
 .about-training ul li .text {
     font-size: 24px;
 }
-.get-program {
-    background: url('../images/background-get-offer.jpg') no-repeat center;
-    background-size: cover;
-}
 .you-will-get {
     padding: 0;
-    -webkit-box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
-    box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
 }
 .you-will-get .block-content {
     position: relative;
