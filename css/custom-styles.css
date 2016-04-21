@@ -271,10 +271,10 @@ nav ul li a:hover {
     line-height: 32px;
     margin: 2.5% auto 0;
 }
-.offer {
+.blue-block {
     background: #06406e;
 }
-.offer .text {
+.blue-block .text {
     color: #ffffff;
     font-size: 44px;
     line-height: 50px;
