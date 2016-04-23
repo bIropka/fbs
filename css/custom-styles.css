@@ -43,6 +43,7 @@ body {
     width: 100%;
     height: 100%;
     background: #ffffff;
+    overflow-x: hidden;
 }
 
 .block-wrap {
@@ -55,7 +56,7 @@ body {
     background: rgba(255, 255, 255, 0.9);
     height: 60px;
     position: fixed;
-    top: -60px;
+    top: 0;
     left: 0;
     z-index: 10;
     -webkit-box-shadow: 0 3px 5px -3px rgba(0,0,0,0.75);
@@ -116,7 +117,7 @@ nav ul li a:hover {
     font-family: "Geometria Medium", sans-serif;
     font-size: 76px;
     color: #eab43e;
-    line-height: 46px;
+    line-height: 60px;
     text-align: left;
     text-transform: none;
 }
@@ -155,9 +156,9 @@ nav ul li a:hover {
 
 .our-services {
     padding: 0;
-    -webkit-box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
-    box-shadow: inset 0 -4px 6px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
 }
 .our-services .block-content {
     position: relative;
@@ -188,7 +189,7 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     left: -10%;
-    background: url('../images/girl.png') no-repeat;
+    background: url('../images/girl.jpg') no-repeat;
     background-size: cover;
     z-index: -1;
 }
@@ -201,7 +202,7 @@ nav ul li a:hover {
     position: relative;
     width: 75%;
     text-align: left;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     z-index: 1;
 }
 .services-accordion li:nth-child(2) {width: 67.5%;}
@@ -215,7 +216,7 @@ nav ul li a:hover {
     width: 90%;
     vertical-align: top;
 }
-.services-accordion .item-header .marker-accordion {
+.item-header .marker-accordion {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -283,6 +284,9 @@ nav ul li a:hover {
 
 .selling-info {
     padding: 0;
+    -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
 }
 .selling-info .block-content {
     position: relative;
@@ -305,10 +309,11 @@ nav ul li a:hover {
     position: absolute;
     bottom: 0;
     right: -20%;
-    width: 70%;
+    width: 72%;
     height: 100%;
-    background: url('../images/poor-man.png');
+    background: url('../images/poor-man.jpg');
     background-size: cover;
+    z-index: -1;
 }
 
 .form-wrap {
@@ -493,9 +498,9 @@ nav ul li a:hover {
 .color-list li:nth-child(4) .icon-training {background: url('../images/sprite-color.png') no-repeat 99.55% center;background-size: cover;}
 .you-will-get {
     padding: 0;
-    -webkit-box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
-    box-shadow: inset 0 -3px 10px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
 }
 .you-will-get .block-content {
     position: relative;
@@ -505,7 +510,7 @@ nav ul li a:hover {
     position: absolute;
     left: -5%;
     bottom: 0;
-    background: url('../images/man-with-board.png') no-repeat center;
+    background: url('../images/man-with-board.jpg') no-repeat center;
     background-size: cover;
     width: 110%;
     padding-top: 66%;
@@ -552,10 +557,17 @@ nav ul li a:hover {
 /*  the end of the training page   */
 
 /*    franchise page    */
+
 .steps ul li {
-    display: block;
     width: 980px;
+    display: block;
+    margin-bottom: 15px;
 }
+.steps ul li:nth-child(2) {top: 75px;margin-left: 30px;}
+.steps ul li:nth-child(3) {top: 150px;margin-left: 60px;}
+.steps ul li:nth-child(4) {top: 225px;margin-left: 90px;}
+.steps ul li:nth-child(5) {top: 300px;margin-left: 120px;}
+.steps ul li:nth-child(6) {top: 375px;margin-left: 150px;}
 .steps .icon {
     display: inline-block;
     width: 60px;
@@ -578,6 +590,262 @@ nav ul li a:hover {
     vertical-align: middle;
     font-size: 28px;
     line-height: 32px;
+}
+.our-services-franchise {
+    padding-top: 5%;
+}
+.salary-size {
+    padding: 0;
+    -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+}
+.salary-size .block-content {
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+.image-business-women {
+    width: 100%;
+    height: 100%;
+    background: #ffffff url('../images/business-women.jpg') no-repeat right bottom;
+    background-size: auto 85%;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    z-index: -1;
+}
+.salary-size .sub-title {
+    margin: 5% 0 2.5% 15%;
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: 100;
+}
+.salary-size .text-1 {
+    font-size: 30px;
+    margin-bottom: 2.5%;
+}
+.salary-size .mark {
+    font-size: 40px;
+    color: #29464a;
+}
+.salary-size ul li {
+    display: block;
+    font-size: 24px;
+}
+.salary-size .text-2 {
+    font-size: 38px;
+    color: #eab43e;
+    margin:  4% 0 2.5%;
+}
+.salary-size .text-3 {
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+.how-your-business ul {
+    text-align: center;
+    margin-top: 5%;
+}
+.how-your-business ul li {
+    width: 342px;
+    margin: 0 1%;
+    vertical-align: top;
+}
+.how-your-business ul li:nth-child(1), .how-your-business ul li:nth-child(2) {
+    margin-top: 0;
+}
+.icon-business {
+    width: 100%;
+    height: 250px;
+    margin: 0 auto;
+}
+.how-your-business ul li:nth-child(1) .icon-business {background: url('../images/sprite-black&white.png') no-repeat 52% center;background-size: cover;}
+.how-your-business ul li:nth-child(2) .icon-business {background: url('../images/sprite-black&white.png') no-repeat 42.5% center;background-size: cover;}
+.how-your-business ul li:nth-child(3) .icon-business {background: url('../images/sprite-black&white.png') no-repeat 17.25% center;background-size: cover;}
+.how-your-business .text {
+    width: 95%;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 2.5% auto 0;
+}
+.start-cost, .introduction-cost {
+    padding: 2.5% 0;
+    text-align: center;
+}
+.start-cost .title {
+    color: #ffffff;
+}
+.business-packages {
+    margin: 2.5% 0;
+}
+.start-cost .business-packages>li {
+    width: 320px;
+    height: 585px;
+    margin: 2.5% 1% ;
+    border: 2px solid #ffffff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: top;
+    position: relative;
+}
+.start-cost .sub-title {
+    border-bottom: 2px solid #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 15px 0;
+    font-size: 24px;
+    color: #ffe598;
+}
+.start-cost .business-packages .sub-title span {
+    font-size: 24px;
+    color: #ffe598;
+    text-decoration: underline;
+}
+.start-cost .business-packages li ul li {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: left;
+    width: 75%;
+    margin: 15px auto 0;
+}
+.start-cost .business-packages li ul li:before {
+    content: "-  ";
+    margin-left: -15px;
+}
+.start-cost .text {
+    width: 100%;
+    font-family: "Geometria Bold", sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+.introduction-cost .title {
+    text-transform: none;
+    line-height: 60px;
+}
+.introduction-cost .business-packages>li {
+    width: 320px;
+    margin: 2.5% 1% ;
+    border: 2px solid #eab43e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    vertical-align: top;
+}
+.introduction-cost .package-name {
+    font-size: 32px;
+    line-height: 28px;
+    color: #eab43e;
+    padding: 15px 0;
+}
+.introduction-cost .text, .introduction-cost .cost-value {
+    display: inline-block;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.introduction-cost table {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+}
+.introduction-cost table td {
+    padding: 0 5%;
+    vertical-align: middle;
+    height: 50px;
+}
+.introduction-cost table tr:nth-child(1),
+.introduction-cost table tr:nth-child(5),
+.introduction-cost table tr:nth-child(9) {
+    background: #fff9ed;
+}
+.introduction-cost table tr:nth-child(3),
+.introduction-cost table tr:nth-child(7),
+.introduction-cost table tr:nth-child(11) {
+    background: #ecfdff;
+}
+.easy-with-us {
+    padding-top:  0;
+    text-align: center;
+}
+.easy-with-us ul {
+    margin-top: 5%;
+}
+.easy-with-us ul li {
+    width: 180px;
+    vertical-align: top;
+}
+.easy-with-us .icon-arrow {
+    width: 50px;
+    height: 50px;
+    background: url('../images/sprite-arrows.png') no-repeat left center;
+    background-size: cover;
+    margin-top: 35px;
+}
+.easy-with-us .icon-step {
+    width: 100%;
+    padding-top: 120px;
+}
+.easy-with-us ul li:nth-child(1) .icon-step {background: url('../images/sprite-black&white.png') no-repeat 61% center;background-size: cover;}
+.easy-with-us ul li:nth-child(3) .icon-step {background: url('../images/sprite-black&white.png') no-repeat 42.5% center;background-size: cover;}
+.easy-with-us ul li:nth-child(5) .icon-step {background: url('../images/sprite-black&white.png') no-repeat 68.5% center;background-size: cover;}
+.easy-with-us ul li:nth-child(7) .icon-step {margin:auto;width:80%;background: url('../images/sprite-black&white.png') no-repeat 75.5% center;background-size: cover;}
+.easy-with-us ul li:nth-child(9) .icon-step {background: url('../images/sprite-black&white.png') no-repeat 85% center;background-size: cover;}
+.easy-with-us .text {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.our-tasks {
+    text-align: center;
+}
+.our-tasks ul {
+    margin-top: 2.5%;
+}
+.our-tasks ul li {
+    width: 350px;
+    vertical-align: top;
+    margin: 0 10px;
+}
+.our-tasks .text {
+    font-size: 24px;
+}
+.our-tasks ul li:nth-child(1) .icon-business {background: url('../images/sprite-color.png') no-repeat 25.5% center;background-size: cover;}
+.our-tasks ul li:nth-child(2) .icon-business {background: url('../images/sprite-color.png') no-repeat 63.5% center;background-size: cover;}
+.our-tasks ul li:nth-child(3) .icon-business {background: url('../images/sprite-color.png') no-repeat 91.5% center;background-size: cover;}
+
+.your-questions {
+    padding-top: 0;
+}
+.questions-accordion {
+    margin-top: 5%;
+    text-align: right;
+}
+.questions-accordion li {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 35px;
+    z-index: 1;
+}
+.questions-accordion .item-header .text {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 24px;
+    cursor: pointer;
+    width: 90%;
+    vertical-align: middle;
+}
+.questions-accordion .item-header .marker-accordion {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+.questions-accordion .item-content {
+    display: none;
+    padding-left: 6%;
+    font-size: 22px;
+    margin-top: 20px;
 }
 /*  the end of the franchise page   */
 
@@ -612,3 +880,8 @@ nav ul li a:hover {
     padding: 5% 0;
 }
 /*    the end of the footer    */
+
+/*    media-queries    */
+@media (max-width: 1366px) {
+
+}

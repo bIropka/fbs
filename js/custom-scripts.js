@@ -13,20 +13,27 @@ $(document).ready(function () {
         }
     });
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > ($(window).height()) / 5) {
-            $('.header').stop().animate({top: 0}, 300);
-        } else {
-            $('.header').stop().animate({top: -60}, 300);
-        }
-    });
-
     $('.marker-scroll').click(function(){
         $('html, body').stop().animate({scrollTop: $('.for-scroll').offset().top}, 800);
     });
 
-    $(window).load(function(){
-        $(".block-wrap").mCustomScrollbar();
+    /**** animation scripts *****
+    $('.animated').onScreen({
+        doIn: function() {
+            var currentLeft = -30;
+            var elements = $('.animated li');
+            var index = 0;
+            var timerId = setTimeout(function showItem() {
+                elements.eq(index++).stop().animate({
+                    left: currentLeft+= 30
+                }, 1000);
+                console.log(index);
+                if(index < elements.length) {
+                    timerId = setTimeout(showItem, 600);
+                }
+            }, 0);
+        }
     });
+    /** end of animation scripts **/
 
 });
