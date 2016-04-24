@@ -133,7 +133,7 @@ nav ul li a:hover {
     width: 70%;
 }
 .block-top .title-long {
-    width: 80%;
+    width: 83%;
 }
 .block-top .text {
     font-family: "Geometria Medium", sans-serif;
@@ -187,7 +187,7 @@ nav ul li a:hover {
 }
 .icon {
     width: 80%;
-    height: 190px;
+    padding-top: 76%;
     margin: 0 auto 3%;
 }
 .color-list li:nth-child(1) .icon-needs {background: url('../images/sprite-color.png') no-repeat -0.25% center;background-size: cover;}
@@ -264,7 +264,7 @@ nav ul li a:hover {
     margin-top: 5%;
 }
 .for-whom ul li {
-    width: 45%;
+    width: 500px;
     margin: 5% 2% 0;
     vertical-align: top;
 }
@@ -273,7 +273,7 @@ nav ul li a:hover {
 }
 .icon-for-whom {
     width: 50%;
-    height: 200px;
+    padding-top: 40%;
     margin: 0 auto;
 }
 .for-whom ul li:nth-child(1) .icon-for-whom {background: url('../images/sprite-black&white.png') no-repeat -0.7% center;background-size: cover;}
@@ -301,6 +301,7 @@ nav ul li a:hover {
     -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5), inset 0 5px 8px -3px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5), inset 0 5px 8px -3px rgba(0,0,0,0.5);
     box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5), inset 0 5px 8px -3px rgba(0,0,0,0.5);
+    overflow-x: hidden;
 }
 .selling-info .block-content {
     position: relative;
@@ -455,7 +456,7 @@ nav ul li a:hover {
 }
 .crisis ul li .text {
     display: inline-block;
-    width: 95%;
+    width: 90%;
     font-size: 30px;
     color: #ffffff;
     vertical-align: middle;
@@ -476,6 +477,8 @@ nav ul li a:hover {
     margin-bottom: 2.5%;
 }
 .partners .text {
+    width: 70%;
+    margin-left: 4%;
     display: inline-block;
     vertical-align: middle;
     font-size: 30px;
@@ -611,6 +614,7 @@ nav ul li a:hover {
     -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
     box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    overflow-x: hidden;
 }
 .salary-size .block-content {
     position: relative;
@@ -633,6 +637,7 @@ nav ul li a:hover {
     font-weight: 100;
 }
 .salary-size .text-1 {
+    width: 60%;
     font-size: 30px;
     margin-bottom: 2.5%;
 }
@@ -640,16 +645,21 @@ nav ul li a:hover {
     font-size: 40px;
     color: #29464a;
 }
+.salary-size ul {
+    width: 60%;
+}
 .salary-size ul li {
     display: block;
     font-size: 24px;
 }
 .salary-size .text-2 {
+    width: 60%;
     font-size: 38px;
     color: #eab43e;
     margin:  4% 0 2.5%;
 }
 .salary-size .text-3 {
+    width: 60%;
     font-size: 24px;
     margin-bottom: 5%;
 }
@@ -667,7 +677,7 @@ nav ul li a:hover {
 }
 .icon-business {
     width: 100%;
-    height: 250px;
+    padding-top: 73%;
     margin: 0 auto;
 }
 .how-your-business ul li:nth-child(1) .icon-business {background: url('../images/sprite-black&white.png') no-repeat 52% center;background-size: cover;}
@@ -868,9 +878,10 @@ nav ul li a:hover {
 }
 .footer ul {
     display: inline-block;
-    width: 33%;
+    width: 300px;
     vertical-align: top;
     text-align: left;
+    margin-bottom: 5%;
 }
 .footer ul li {
     margin: 1% 0;
@@ -889,22 +900,135 @@ nav ul li a:hover {
     font-family: "Geometria Medium", sans-serif;
     font-size: 24px;
     text-align: center;
-    padding: 5% 0;
+    padding-bottom: 5%;
 }
 /*    the end of the footer    */
 
 /*    media-queries    */
 @media (max-width: 1366px) {
-
+    .block-top .text {
+        margin-top: 5%;
+    }
+    .block-top .title-long {
+        line-height: 80px;
+    }
 }
 
 @media (max-width: 1180px) {
-    .block-content {
+    .block-top .title {
+        font-size: 52px;
+        line-height: 64px;
+    }
+    .block-top .text {
+        font-size: 36px;
+        line-height: 36px;
+        margin-top: 25%;
+    }
+    .title {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .form-field::-webkit-input-placeholder {color: #ffffff;}
+    .form-field::-moz-placeholder {color: #ffffff;}
+    .form-field:-moz-placeholder {color: #ffffff;}
+    .form-field:-ms-input-placeholder {color: #ffffff;}
+    .steps ul li {
+        width: 100%;
+        margin-left: 0!important;
+    }
+    .steps .icon {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        line-height: 50px;
+    }
+    .steps .text {
+        width: 90%;
+        margin-left: 15px;
+        font-size: 26px;
+        line-height: 28px;
+    }
+    .blue-block .text {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .services-accordion {
+        margin-top: 5%;
+        height: 550px;
+    }
+    .services-accordion li {
+        width: 60%!important;
+    }
+    .services-accordion .item-header .text {
+        font-size: 32px;
+        line-height: 36px;
+        width: 85%;
+    }
+    .item-header .marker-accordion {
+        width: 35px;
+        height: 35px;
+    }
+    .services-accordion .item-content {
+        font-size: 20px;
+    }
+    .for-whom ul li {
+        width: 350px;
+        margin: 5% 0.5% 0;
+    }
+    .for-whom .text {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .salary-size .sub-title {
+        font-size: 32px;
+    }
+    .salary-size .text-1 {
+        font-size: 24px;
+    }
+    .salary-size .mark {
+        font-size: 40px;
+        color: #29464a;
+    }
+    .salary-size ul li, .salary-size .text-3 {
+        font-size: 20px;
+    }
+    .salary-size .text-2 {
+        font-size: 32px;
+    }
+    .selling-info .text, .selling-info .selected-text {
+        font-size: 20px;
+    }
+}
 
+@media (max-width: 860px) {
+    .image-business-women {
+        display: none;
+    }
+    .salary-size .text-1, .salary-size .text-2, .salary-size .text-3, .salary-size ul  {
+        width: 100%;
+    }
+    .salary-size .text-2  {
+        font-size: 24px;
+    }
+    .salary-size .sub-title {
+        font-size: 24px;
+    }
+    .image-poor-man {display: none;}
+    .selling-info .text, .selling-info .selected-text {
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
+    .block-top .title {
+        font-size: 48px;
+        line-height: 58px;
+    }
+    .block-top .text {
+        font-size: 28px;
+        line-height: 28px;
+        margin-top: 25%;
+    }
     nav {
         display: none;
         width: 100%;
@@ -941,6 +1065,246 @@ nav ul li a:hover {
     .marker-menu-active {
         background: url('../images/sprite-menu.png') no-repeat 120% center;
         background-size: cover;
+    }
+    .title, .crisis .title, .form-wrap .title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .crisis ul li .text {
+        font-size: 18px;
+    }
+    .crisis .block-content>.text {
+        font-size: 24px;
+    }
+    .partners .text {
+        font-size: 22px;
+    }
+    .footer ul {
+        text-align: center;
+    }
+    .icon-contacts {
+        width: 60px;
+        height: 60px;
+        margin-right: 1%;
+    }
+    .contacts .text {
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .steps .text {
+        width: 85%;
+        margin-left: 15px;
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .blue-block .text {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .image-girl {
+        display: none;
+    }
+    .services-accordion {
+        margin-top: 5%;
+        height: auto;
+    }
+    .services-accordion li {
+        width: 100%!important;
+    }
+    .services-accordion .item-header .text {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .item-header .marker-accordion {
+        width: 25px;
+        height: 25px;
+    }
+    .services-accordion .item-content {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    .for-whom ul li {
+        margin: 5% 0.5%;
+    }
+    .easy-with-us ul li {
+        display: block;
+        margin: 10px auto;
+    }
+    .easy-with-us .icon-arrow {
+        background: url('../images/sprite-arrows.png') no-repeat right center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 540px) {
+    .block-top .title {
+        width: 100%;
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .form-wrap .title {
+        font-size: 32px;
+    }
+    .block-top .text {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 25%;
+    }
+    .icon-ok {
+        width: 25px;
+        padding-top: 18px;
+    }
+    .partners .logo-pr {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 14.25%;
+    }
+    .partners .logo-sa {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 16.38%;
+    }
+    .partners .text {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 30px;
+    }
+    .form-wrap form {
+        width: 300px;
+    }
+    .form-field {
+        font-size: 18px;
+        padding: 2% 0 2% 5%;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .form-submit {
+        font-size: 18px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+    }
+    .form-field::-webkit-input-placeholder {font-size: 18px;}
+    .form-field::-moz-placeholder {font-size: 18px;}
+    .form-field:-moz-placeholder {font-size: 18px;}
+    .form-field:-ms-input-placeholder {font-size: 18px;}
+    .footer ul li, .footer ul li a, .copyrights {
+        font-size: 18px;
+    }
+    .icon-contacts {
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .contacts .text {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 10px 0 30px;
+        font-size: 26px;
+        line-height: 26px;
+    }
+    .steps .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .steps .text {
+        width: 80%;
+        margin-left: 15px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .blue-block .text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .services-accordion {
+        margin-top: 5%;
+    }
+    .services-accordion .item-header .text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .item-header .marker-accordion {
+        width: 20px;
+        height: 20px;
+    }
+    .services-accordion .item-content {
+        font-size: 16px;
+    }
+    .for-whom .text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .salary-size {
+        padding: 25px 0;
+        box-shadow: none;
+    }
+    .salary-size .sub-title {
+        margin-left: 0;
+    }
+    .salary-size .text-1, .salary-size .text-2, .salary-size .text-3, .salary-size ul li {
+        font-size: 20px;
+    }
+    .how-your-business ul li {
+        width: 300px;
+        margin-bottom: 50px;
+    }
+    .our-tasks ul li {
+        width: 300px;
+        margin: 30px auto;
+    }
+    .our-tasks ul li .text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+    .questions-accordion .item-header .text {
+        width: 85%;
+        font-size: 18px;
+    }
+    .questions-accordion .item-content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 360px) {
+
+    .block-top .text {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 30%;
+    }
+    .title, .crisis .title, .form-wrap .title {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .crisis ul li .text {
+        width: 85%;
+        font-size: 16px;
+    }
+    .crisis .block-content>.text {
+        font-size: 20px;
+    }
+    .services-accordion li {
+        margin-bottom: 20px;
+    }
+    .for-whom ul li {
+        width: 300px;
+    }
+    .start-cost, .introduction-cost {
+        padding: 30px 0;
+    }
+    .start-cost .business-packages>li, .introduction-cost .business-packages>li {
+        width: 300px;
+    }
+    .introduction-cost .title {
+        line-height: 32px;
     }
 
 }
