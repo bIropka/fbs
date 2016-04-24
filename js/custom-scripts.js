@@ -2,19 +2,27 @@ $(document).ready(function () {
 
 
     $('.item-header').click(function () {
-        if (!$(this).parent().hasClass('active')) {
-            $(this).parent().siblings('.accordion .active').find('.item-content').animate({height: 'hide', marginTop: 0}, 600);
-            $(this).siblings('.item-content').animate({height: 'show', marginTop: 20}, 600);
-            $(this).parent().siblings('.accordion .active').removeClass('active');
-            $(this).parent().addClass('active');
-        } else {
+        //if (!$(this).parent().hasClass('active')) {
+            //$(this).parent().siblings('.accordion .active').find('.item-content').animate({height: 'hide', marginTop: 0}, 600);
+            $(this).parent().siblings('.active').find('.item-content').slideUp();
+            $(this).parent().siblings('.active').removeClass('active');
+            //$(this).siblings('.item-content').animate({height: 'show', marginTop: 20}, 600);
+            $(this).siblings('.item-content').slideToggle();
+
+            $(this).parent().toggleClass('active');
+        /*} else {
             $(this).siblings('.item-content').animate({height: 'hide', marginTop: 0}, 600);
             $(this).parent().removeClass('active');
-        }
+        }*/
     });
 
     $('.marker-scroll').click(function(){
         $('html, body').stop().animate({scrollTop: $('.for-scroll').offset().top}, 800);
+    });
+
+    $('.marker-menu').click(function() {
+        $(this).toggleClass('marker-menu-active');
+        $('nav').slideToggle();
     });
 
     /**** animation scripts *****
@@ -27,7 +35,6 @@ $(document).ready(function () {
                 elements.eq(index++).stop().animate({
                     left: currentLeft+= 30
                 }, 1000);
-                console.log(index);
                 if(index < elements.length) {
                     timerId = setTimeout(showItem, 600);
                 }
