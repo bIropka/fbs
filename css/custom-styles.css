@@ -114,6 +114,8 @@ nav ul li a:hover {
     background-size: cover;
 }
 .block-top .block-content {
+    width: 100%;
+    height: 85%;
     position: absolute;
     top: 15%;
     left: 0;
@@ -140,8 +142,9 @@ nav ul li a:hover {
     font-size: 40px;
     color: #ffffff;
     line-height: 40px;
-    text-align: right;
-    margin-top: 15%;
+    position: absolute;
+    bottom: 25%;
+    right: 2.5%;
 }
 .marker-scroll {
     position: absolute;
@@ -910,9 +913,6 @@ nav ul li a:hover {
 
 /*    media-queries    */
 @media (max-width: 1366px) {
-    .block-top .text {
-        margin-top: 5%;
-    }
     .block-top .title-long {
         line-height: 80px;
     }
@@ -926,7 +926,6 @@ nav ul li a:hover {
     .block-top .text {
         font-size: 36px;
         line-height: 36px;
-        margin-top: 25%;
     }
     .title {
         font-size: 50px;
@@ -1041,7 +1040,6 @@ nav ul li a:hover {
     .block-top .text {
         font-size: 28px;
         line-height: 28px;
-        margin-top: 25%;
     }
     nav {
         display: none;
@@ -1165,7 +1163,6 @@ nav ul li a:hover {
     .block-top .text {
         font-size: 20px;
         line-height: 20px;
-        margin-top: 25%;
     }
     .icon-ok {
         width: 25px;
@@ -1301,7 +1298,6 @@ nav ul li a:hover {
     .block-top .text {
         font-size: 18px;
         line-height: 20px;
-        margin-top: 30%;
     }
     .title, .crisis .title, .form-wrap .title {
         font-size: 28px;
