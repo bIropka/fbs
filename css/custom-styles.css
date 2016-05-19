@@ -173,9 +173,9 @@ nav ul li a:hover {
 
 .our-services {
     padding: 0;
-    -webkit-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
-    box-shadow: inset 0 -4px 8px -3px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 -15px 10px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0 -15px 10px -10px rgba(0,0,0,0.5);
+    box-shadow: inset 0 -15px 10px -10px rgba(0,0,0,0.5);
 }
 .our-services .block-content {
     position: relative;
@@ -838,6 +838,10 @@ nav ul li a:hover {
 .our-tasks .text {
     font-size: 24px;
 }
+.our-tasks ul li .icon-business {
+    width: 80%;
+    padding-top: 58%;
+}
 .our-tasks ul li:nth-child(1) .icon-business {background: url('../images/sprite-color.png') no-repeat 25.5% center;background-size: cover;}
 .our-tasks ul li:nth-child(2) .icon-business {background: url('../images/sprite-color.png') no-repeat 63.5% center;background-size: cover;}
 .our-tasks ul li:nth-child(3) .icon-business {background: url('../images/sprite-color.png') no-repeat 91.5% center;background-size: cover;}
@@ -889,6 +893,9 @@ nav ul li a:hover {
     vertical-align: top;
     text-align: left;
     margin-bottom: 5%;
+}
+.footer ul:first-child {
+    width: 200px;
 }
 .footer ul li {
     margin: 1% 0;
